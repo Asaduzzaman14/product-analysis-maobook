@@ -8,8 +8,8 @@ const HomeReview = (props) => {
     return (
         <div className='review'>
             <img src={img} alt="" />
-            <h1>Customer Name: {name}</h1>
-            <p>Review : {review}</p>
+            <h1 className='font-bold p-2 text-lg'>Customer Name: {name}</h1>
+            <p><span className='font-bold'> Review :</span> {review}</p>
             <h3>{rating}</h3>
         </div>
     );

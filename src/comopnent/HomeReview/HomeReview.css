@@ -1,10 +1,11 @@
 .review {
-    border: 2px solid;
+    border: 2px solid rgb(241, 243, 248);
+    border-radius: 20px;
     padding: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .review img {

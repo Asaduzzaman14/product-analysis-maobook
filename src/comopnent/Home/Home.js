@@ -4,11 +4,12 @@ import './Home.css'
 import HomeReview from '../HomeReview/HomeReview'
 
 const Home = () => {
+
     const [reviews, setReviews] = useReview()
     // console.log(reviews);
     return (
-        <div className=' p-5 '>
-            <div className='home'>
+        <div className=''>
+            <div className='home p-5'>
                 <div className='product-detail justify-center items-center'>
                     <h1 className='text-4xl'>BUY your Gadget</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, beatae in. Sit, nesciunt accusantium inventore illum commodi ipsum placeat dignissimos?</p>
@@ -21,9 +22,9 @@ const Home = () => {
 
 
             <div>
-                <button className='mx-auto border-2 px-6 py-1 text-white rounded bg-blue-500 mt-4'>SEE CUSTOMER REVIEW (3)</button>
+                <button className='mx-auto mb-6 border-2 px-6 py-1 text-white rounded bg-blue-500 mt-4'>SEE CUSTOMER REVIEW (3)</button>
 
-                <div className='review-container'>
+                <div className='review-container grid  md:grid-cols-3 sm:grid-cols-1'>
                     {
                         reviews.slice(0, 3).map(review => <HomeReview key={review.id} review={review} ></HomeReview>)
                     }

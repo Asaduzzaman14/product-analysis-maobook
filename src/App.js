@@ -7,7 +7,8 @@ import Footer from './comopnent/Footer/Footer';
 import Header from './comopnent/Header/Header';
 import Home from './comopnent/Home/Home';
 import NotFound from './comopnent/NotFound/NotFound';
-import Reviews from './comopnent/Review/Review';
+import Reviews from './comopnent/Reviews/Reviews';
+
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/reviews' element={<Reviews />}></Route>
+
         <Route path='/dashbord' element={<Dashbord />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/about' element={<About />}></Route>

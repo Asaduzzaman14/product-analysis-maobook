@@ -10,9 +10,9 @@ const Reviews = () => {
     return (
         <div>
             <h1 className='text-2xl'>This is review Page</h1>
-            <div className='review-container'>
+            <div className='review-container grid  md:grid-cols-3 sm:grid-cols-1'>
                 {
-                    reviews.map(review => <Review ></Review>)
+                    reviews.map(review => <Review review={review} key={review.id}></Review>)
                 }
             </div>
         </div >
