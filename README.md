@@ -9,8 +9,8 @@
 * JavaScript
 * React
 * Tailwind
-* 
-so on
+* React Icon
+
 
 
 

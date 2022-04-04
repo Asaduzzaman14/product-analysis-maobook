@@ -10,7 +10,7 @@ const Reviews = () => {
     return (
         <div>
             <h1 className='text-3xl mt-16 mb-5'>All Customer Reviews</h1>
-            <p className='mb-7 mx-40'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime voluptatibus vel ea fugiat dignissimos cum deleniti ipsum amet eos, accusantium, praesentium voluptates architecto esse?s</p>
+            <p className='mb-7 mx-40'> Coming into this review, I had a catalog of potential pitfalls that Apple could have fallen into when switching from an Intel chip to its own processor. Chip transitions are devilishly hard and don’t usually go smoothly. This MacBook Air not only avoids almost all of those pitfalls, but it gleefully leaps over them.</p>
             <div className='review-container grid  md:grid-cols-3 sm:grid-cols-1'>
                 {
                     reviews.map(review => <Review review={review} key={review.id}></Review>)
