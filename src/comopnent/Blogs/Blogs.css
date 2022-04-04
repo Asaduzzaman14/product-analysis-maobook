@@ -1,0 +1,11 @@
+.ans-container {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    gap: 20px;
+    margin: 20px;
+}
+
+.hr {
+    background-color: rgb(42, 17, 96);
+    border: 2px solid
+}

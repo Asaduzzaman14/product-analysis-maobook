@@ -48,10 +48,10 @@ const Dashbord = () => {
     ]
 
     return (
-        <div className=' p-5 mt-5 grid md:grid-cols-2 sm:grid-cols-1 gap-5'>
+        <div className=' p-5 mt-16 grid md:grid-cols-2 sm:grid-cols-1 gap-5'>
 
-            <div className='border border-red-700'>
-                <BarChart width={500} height={250} data={data}>
+            <div className=''>
+                <BarChart width={450} height={250} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="month" />
                     <YAxis />
@@ -63,7 +63,7 @@ const Dashbord = () => {
                 </BarChart>
             </div>
 
-            <div className='border border-red-700'>
+            <div className=''>
 
                 <PieChart width={530} height={250}>
                     <Tooltip />
