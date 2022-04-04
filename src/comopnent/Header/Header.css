@@ -1,7 +1,9 @@
 .header {
     background: rgb(4, 22, 55);
+    padding: 10px 0;
+    font-size: 18px;
 }
 
-.header a :hover {
+a :hover {
     color: brown
 }

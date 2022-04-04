@@ -48,25 +48,27 @@ const Dashbord = () => {
     ]
 
     return (
-        <div>
-            <h1>This is Dashbord</h1>
-            <BarChart width={730} height={250} data={data}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="month" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="sell" fill="#8884d8" />
-                <Bar dataKey="revenue" fill="#82ca9d" />
-                <Bar dataKey="investment" fill="#82ca9d" />
-            </BarChart>
+        <div className=' p-5 mt-5 grid md:grid-cols-2 sm:grid-cols-1 gap-5'>
 
-            <div className=' my-10'>
+            <div className='border border-red-700'>
+                <BarChart width={500} height={250} data={data}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="month" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="sell" fill="#8884d8" />
+                    <Bar dataKey="revenue" fill="#82ca9d" />
+                    <Bar dataKey="investment" fill="#82ca9d" />
+                </BarChart>
+            </div>
+
+            <div className='border border-red-700'>
 
                 <PieChart width={530} height={250}>
                     <Tooltip />
                     <Pie data={data} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-                    <Pie data={data} dataKey="sell" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#88783a" />
+                    <Pie data={data} dataKey="sell" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                     <Pie data={data} dataKey="revenue" nameKey="month" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                 </PieChart>
             </div>
