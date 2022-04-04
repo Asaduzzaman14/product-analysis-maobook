@@ -30,3 +30,13 @@ function App() {
 }
 
 export default App;
+
+// rm -rf .git
+// git init
+// git add .
+// git commit -m "first commit"
+// git branch -M main
+// git remote add origin এইজায়গাই আপনার রিপোজিটরি এর লিংক,(যেটি ক্লোন করার জন্য নিয়েছিলেন)
+// git push -u origin main -f
+// git remote add origin https://github.com/programming-hero-web-course-4/product-analysis-website-Asaduzzaman14.git
+// git push -u origin main -f
