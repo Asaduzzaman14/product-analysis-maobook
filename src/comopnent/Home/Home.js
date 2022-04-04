@@ -2,18 +2,20 @@ import React from 'react';
 import useReview from '../../Hooks/useReview';
 import './Home.css'
 import HomeReview from '../HomeReview/HomeReview'
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const navigate = useNavigate()
 
     const [reviews, setReviews] = useReview()
     // console.log(reviews);
     return (
         <div className=''>
-            <div className='home p-5'>
+            <div className='home p-5 grid  md:grid-cols-2 sm:grid-cols-1'>
                 <div className='product-detail justify-center items-center'>
-                    <h1 className='text-4xl'>BUY your Gadget</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, beatae in. Sit, nesciunt accusantium inventore illum commodi ipsum placeat dignissimos?</p>
-                    <button className='border-2 px-6 py-1 text-white rounded bg-blue-500 mt-4'>BUY NOW</button>
+                    <h1 className='text-4xl'>MacBook Analysis</h1>
+                    <p className='mt-4'>This is a M1 model It is fast, it is light, it is powerful, it wakes up in seconds..... it saves me time like crazy, no longer the annoying ball it replaces my old and faithful MacBook </p>
+                    <button className='button border-2 px-6 py-1 text-white rounded  mt-4'>LIVE DEMO</button>
                 </div>
                 <div className=' '>
                     <img className='' src={'/img/laptop.avif'} alt="" />
@@ -22,9 +24,9 @@ const Home = () => {
 
 
             <div>
-                <button className='mx-auto mb-6 border-2 px-6 py-1 text-white rounded bg-blue-500 mt-4'>SEE CUSTOMER REVIEW (3)</button>
+                <button onClick={() => navigate('reviews')} className='button text-white mx-auto mb-6 border-2 px-6 py-1 rounded mt-4'>SEE CUSTOMER REVIEW (3)</button>
 
-                <div className='review-container grid  md:grid-cols-3 sm:grid-cols-1'>
+                <div className='review-container grid  md:grid-cols-3 sm:grid-cols-1 my-5'>
                     {
                         reviews.slice(0, 3).map(review => <HomeReview key={review.id} review={review} ></HomeReview>)
                     }

@@ -1,8 +1,8 @@
 .home {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .home img {
@@ -11,9 +11,21 @@
     margin-bottom: 50px;
 }
 
+.button {
+    background-color: rgb(12, 30, 77);
+    font-weight: bolder;
+}
+
+.button:hover {
+    color: rgb(12, 30, 77);
+    background-color: #FFF;
+    border: 2px solid rgb(12, 30, 77);
+
+}
+
 .product-detail {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .review-container {
