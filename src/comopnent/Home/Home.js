@@ -18,19 +18,21 @@ const Home = () => {
                     <button className='button border-2 px-6 py-1 text-white rounded  mt-4'>LIVE DEMO</button>
                 </div>
                 <div className=' '>
-                    <img className='' src={'/img/laptop.avif'} alt="" />
+                    <img className='rounded' src={'img/image.avif'} alt="" />
                 </div>
             </div>
 
 
             <div>
-                <button onClick={() => navigate('reviews')} className='button text-white mx-auto mb-6 border-2 px-6 py-1 rounded mt-4'>SEE CUSTOMER REVIEW (3)</button>
 
+                <h1 className='text-2xl font-semibold'>CUSTOMER REVIEW(3)</h1>
                 <div className='review-container grid  md:grid-cols-3 sm:grid-cols-1 my-5'>
                     {
                         reviews.slice(0, 3).map(review => <HomeReview key={review.id} review={review} ></HomeReview>)
                     }
                 </div>
+
+                <button onClick={() => navigate('/reviews')} className='button text-white mx-auto mb-6 border-2 px-6 py-1 rounded mt-4'>SEE All CUSTOMER REVIEW </button>
             </div>
         </div>
     );

@@ -6,16 +6,16 @@ const Review = (props) => {
     const { name, review, rating, img } = props.review
     return (
         <div className='review p-4 '>
-            <img className='rounded-lg' src={img} alt="" />
-            <h1>Customer Name: {name}</h1>
-            <p>Review : {review}</p>
+            <img src={img} alt="" />
+            <h1 className='font-bold p-2 text-lg'> Name: {name}</h1>
+            <p><span className='font-bold'> Review :</span> {review}</p>
             <div className='rating flex justify-center mt-3 text-center'>
                 <AiFillStar></AiFillStar>
                 <AiFillStar></AiFillStar>
                 <AiFillStar></AiFillStar>
                 <AiFillStar></AiFillStar>
                 <AiFillStar></AiFillStar>
-                {/* <h3 className='ml-2 '> {rating}</h3> */}
+                <h3 className='ml-2 '> {rating}</h3>
             </div>
 
         </div>
