@@ -1,0 +1,14 @@
+.review {
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.review img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}

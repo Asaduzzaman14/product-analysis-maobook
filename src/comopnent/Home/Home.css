@@ -1,0 +1,23 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.home img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.product-detail {
+    align-items: center;
+    margin-top: 50px;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px
+}
