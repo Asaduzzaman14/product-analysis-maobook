@@ -1,3 +1,21 @@
+
+
+[https://profound-liger-9af399.netlify.app](https://profound-liger-9af399.netlify.app)
+
+
+#example project 
+
+#Techonlgy stack 
+* JavaScript
+* React
+* Tailwind
+* 
+so on
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
