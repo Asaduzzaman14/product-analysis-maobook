@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiFillStar } from 'react-icons/ai';
 
 const Review = (props) => {
     // console.log(props.reviewall);
@@ -8,7 +9,15 @@ const Review = (props) => {
             <img className='rounded-lg' src={img} alt="" />
             <h1>Customer Name: {name}</h1>
             <p>Review : {review}</p>
-            <h3>{rating}</h3>
+            <div className='rating flex justify-center mt-3 text-center'>
+                <AiFillStar></AiFillStar>
+                <AiFillStar></AiFillStar>
+                <AiFillStar></AiFillStar>
+                <AiFillStar></AiFillStar>
+                <AiFillStar></AiFillStar>
+                {/* <h3 className='ml-2 '> {rating}</h3> */}
+            </div>
+
         </div>
     );
 
